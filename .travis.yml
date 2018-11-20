@@ -1,0 +1,26 @@
+language: java
+
+env:
+  global:
+    - SONATYPE_USERNAME=ph@phloc.com
+    - secure: "LA/7rAiNZ3wfSO2CjMU3iy6JdFe0CeMFJkrWmDsWpHUaBUcCZ7fU2MawO1SlnbFwHQWcRsHJFpAExCR8r7LJKMXLzkr+intgXansSAMDWIeD3
+b044QBbXmip4Zk14mzV4UECpTgB7roTIv4rKXpcTpxVoSG8yDh4Qrd2NL/xxm1nOzQE879/M/GQjR9ndGc3uFgNeoAgkQoykp8ddvelNcW5MSyPGybMA5oKF
+981BuPjyx/RtOSkHM9CoWAq17RTcOxKjv29/9gBbbdLT4/tvEsO+NxbslsG1yD9w2YXWZyIG+ujWCt5NF5a0k24E2gioe9vYDG/jImZkNMijXNa+hZZYm7u1
+RP5Q1wQrpCZ8KuS4k1jWpdhHkqIpR26hfzWlsYXRCAXYWD7+TbdiLzKtK94yvVNMFMV6oiE2+0ef7oTbWAjkmR0k/UFDhQ62pxltXqV0Ov8PSzG5Ke5JwVSD
+egHP1LBpSDsSMFndrygV++09TyNE8kehPACK3M1Y1RGPetL8vfoFcJDVzSXCrnRmxAZH0x8ZxnKObqm3NtVVB1XV+MykH/ZQR6cRIGMCxzJfGxfVs0Mn6zjL
+Ixc+hZthMpnGGW6QFcakQS/6pORQzIT9evUyj/zM8I+cdIlXXPsamSirEdXExcp1o9Vyc8y0VBgkHMUab5AyP3X4FMwZVI="
+
+jdk:
+  - oraclejdk8
+  - oraclejdk11
+  - openjdk11
+  
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U
+  
+cache:
+  directories:
+    - $HOME/.m2
+
+after_success:
+  - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy

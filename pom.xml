@@ -70,6 +70,13 @@
       <properties>
         <jaxb.version>2.2.11</jaxb.version>
       </properties>
+      <dependencies>
+        <!-- Only present up to v2.3.0 -->
+        <dependency>
+          <groupId>org.glassfish.jaxb</groupId>
+          <artifactId>jaxb-core</artifactId>
+        </dependency>
+      </dependencies>
     </profile>
     <profile>
       <id>jdk9up</id>
@@ -112,10 +119,6 @@
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-runtime</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.glassfish.jaxb</groupId>
-      <artifactId>jaxb-core</artifactId>
     </dependency>
     <dependency>
       <groupId>com.sun.istack</groupId>

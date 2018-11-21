@@ -9,11 +9,6 @@ PPSw6XDkTSAMbDScUE/MacrJ/Xl8Ji8IpO0SmBSQ4yu17GawjwkvSCWqdt/ZRltgU8/f7ZIt/9RoVPYq
 LRZ3xRcplNgqha/VNnt/7oquxc5nQ/UE1ZQ82AVWuRxkbv4FU+0VuUewrLTAZqOdzmIsx+WU1wceQVPKxY8fzN5WnOeZ9ymcf4U9zH9f54gNMn2huADElOxJB4dIWipNNq3hc2iPYPYPL9NhXLO6MSy92IA9vVle
 sIisSgJhEo4W4u80CJ2jwzSVTnG28DnJ28Ct+odT0B6Z0kZft/zfb8="    
 
-jdk:
-  - oraclejdk8
-  - oraclejdk11
-  - openjdk11
-  
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U
   
@@ -25,5 +20,13 @@ branches:
   only:
     - master
 
-after_success:
-  - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy
+jobs:
+  include:
+    - stage: test
+      jdk: oraclejdk8
+      after_success:
+        - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy
+    - stage: test
+      jdk: oraclejdk11
+    - stage: test
+      jdk: openjdk11

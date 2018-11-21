@@ -10,8 +10,8 @@ JAXB 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
-* v1.0.0 - work in progress
-    * Initial release for JAXB 2.2.11 and 2.3.0
+* v1.0.0 - 2018-11-21
+    * Initial release for JAXB 2.2.11 and 2.3.1
 
 # Maven usage
 

@@ -21,5 +21,9 @@ cache:
   directories:
     - $HOME/.m2
 
+branches:
+  only:
+    - master
+
 after_success:
   - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy

@@ -93,7 +93,7 @@
         <jdk>[9,12)</jdk>
       </activation>
       <properties>
-        <jaxb.version>2.3.1</jaxb.version>
+        <jaxb.version>2.3.2</jaxb.version>
       </properties>
       <dependencies>
         <dependency>

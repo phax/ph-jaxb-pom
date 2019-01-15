@@ -28,6 +28,18 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 </dependency>
 ```
 
+# Gradle usage
+
+As Gradle does not support Maven profile activation by JDK version, this section outlines the includes per JDK version.
+
+With JDK 8, include the following dependencies:
+* org.glassfish.jaxb:jaxb-core:2.2.11
+* org.glassfish.jaxb:jaxb-runtime:2.2.11
+* com.sun.istack:istack-commons-runtime:2.21
+
+With JDK 9 or later, include the following dependencies:
+* org.glassfish.jaxb:jaxb-runtime:2.3.2
+
 ---
 
 My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |

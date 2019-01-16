@@ -30,7 +30,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 
 # Gradle usage
 
-As Gradle does not support Maven profile activation by JDK version, this section outlines the includes per JDK version.
+As Gradle does not support Maven profile activation by JDK version, this section outlines the includes per JDK version (as of ph-jaxb-pom 1.0.1).
 
 With JDK 8, include the following dependencies:
 * org.glassfish.jaxb:jaxb-core:2.2.11

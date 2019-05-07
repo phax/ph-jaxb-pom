@@ -10,6 +10,8 @@ JAXB 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
+* v1.0.3 - 2019-05-07
+    * Using unbounded version instead of limiting to Java 12.x
 * v1.0.2 - 2019-05-02
     * Added support for JDK 12
 * v1.0.1 - 2019-01-15
@@ -25,7 +27,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxb-pom</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <type>pom</type>
 </dependency>
 ```

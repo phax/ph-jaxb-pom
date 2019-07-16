@@ -44,6 +44,8 @@ With JDK 8, include the following dependencies:
 With JDK 9 or later, include the following dependencies:
 * org.glassfish.jaxb:jaxb-runtime:2.3.2
 
+The exclusion of this POM might be necessary via `exclude group: 'com.helger', module: 'ph-jaxb-pom'`
+
 ---
 
 My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |

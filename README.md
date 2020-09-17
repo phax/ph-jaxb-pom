@@ -10,6 +10,8 @@ JAXB 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
+* v1.1.0 - 2020-09-17
+    * Switching to Jakarta version 2.3.3 - no more differentiation
 * v1.0.3 - 2019-05-07
     * Using unbounded version instead of limiting to Java 12.x
 * v1.0.2 - 2019-05-02
@@ -32,7 +34,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 </dependency>
 ```
 
-# Gradle usage
+# Gradle usage (for issues up to v1.0.3)
 
 As Gradle does not support Maven profile activation by JDK version, this section outlines the includes per JDK version (as of ph-jaxb-pom 1.0.1).
 

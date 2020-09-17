@@ -29,7 +29,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxb-pom</artifactId>
-  <version>1.0.3</version>
+  <version>1.1.0</version>
   <type>pom</type>
 </dependency>
 ```

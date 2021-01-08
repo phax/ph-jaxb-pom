@@ -11,7 +11,6 @@ JAXB 2.3.x is only targeting Java 9 and newer.
 # News and noteworthy
 
 * v1.2.0 - work in progress
-    * Updated to JAXB 3.0.0
 * v1.1.0 - 2020-09-17
     * Switching to Jakarta version 2.3.3 - no more differentiation
 * v1.0.3 - 2019-05-07

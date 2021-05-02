@@ -10,7 +10,7 @@ JAXB 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
-* v1.2.0 - work in progress
+* v1.2.0 - 2021-05-02
     * Removed `<dependencies>` to enforce using it as a BOM
 * v1.1.0 - 2020-09-17
     * Switching to Jakarta version 2.3.3 - no more differentiation
@@ -31,7 +31,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxb-pom</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <type>pom</type>
   <scope>import</scope>
 </dependency>

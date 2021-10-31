@@ -25,7 +25,7 @@
     <version>1.11.4</version>
   </parent>
   <artifactId>ph-jaxb-pom</artifactId>
-  <version>1.2.1</version>
+  <version>1.2.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-jaxb-pom</name>
   <description>A POM only project that contains all dependencies to easily use JAXB in your Maven project</description>
@@ -44,7 +44,7 @@
     <connection>scm:git:git@github.com:phax/ph-jaxb-pom.git</connection>
     <developerConnection>scm:git:git@github.com:phax/ph-jaxb-pom.git</developerConnection>
     <url>http://github.com/phax/ph-jaxb-pom</url>
-    <tag>ph-jaxb-pom-1.2.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <organization>

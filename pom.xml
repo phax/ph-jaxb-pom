@@ -62,9 +62,9 @@
   </developers>
 
   <properties>
-    <!-- 2.3.3: JDK 8 -->
-    <!-- 3.0.0: JDK 11 -->
-    <jaxb.version>2.3.3</jaxb.version>
+    <!-- 2.3.x: JDK 8 -->
+    <!-- 3.0.x: JDK 11 -->
+    <jaxb.version>2.3.5</jaxb.version>
   </properties>
 
   <dependencyManagement>

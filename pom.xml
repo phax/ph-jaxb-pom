@@ -61,23 +61,20 @@
     </developer>
   </developers>
 
-  <properties>
-    <!-- 2.3.x: JDK 8 -->
-    <!-- 3.0.x: JDK 11 -->
-    <jaxb.version>2.3.5</jaxb.version>
-  </properties>
+  <!-- 2.3.x: JDK 8 -->
+  <!-- 3.0.x: JDK 11 -->
 
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>jakarta.xml.bind</groupId>
         <artifactId>jakarta.xml.bind-api</artifactId>
-        <version>${jaxb.version}</version>
+        <version>2.3.3</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-bom-ext</artifactId>
-        <version>${jaxb.version}</version>
+        <version>2.3.5</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

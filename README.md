@@ -10,6 +10,8 @@ JAXB 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
+* v1.2.1 - 2021-10-31
+    * Updated to JAXB 2.3.5
 * v1.2.0 - 2021-05-02
     * Removed `<dependencies>` to enforce using it as a BOM
 * v1.1.0 - 2020-09-17

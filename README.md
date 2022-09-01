@@ -10,6 +10,9 @@ JAXB 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
+* v2.0.0 - work in progress
+    * Updated to JAXB 4.0.0
+    * Requires Java 11 as the baseline
 * v1.2.2 - 2021-10-31
     * Updated to JAXB 2.3.5
 * v1.2.0 - 2021-05-02

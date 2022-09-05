@@ -5,12 +5,11 @@ A POM only project that contains all dependencies for easily using JAXB from Mav
 Currently it is very tedious to include all artefacts relevant for JAXB into each and every POM manually.
 Therefore I created this project to provide an easy to use POM for using JAXB from within Maven.
 
-This project is can be used for JAXB 2.2.x and 2.3.x.
-JAXB 2.3.x is only targeting Java 9 and newer. 
+This project can be used for JAXB 4.x and requires at least Java 11.
 
 # News and noteworthy
 
-* v2.0.0 - work in progress
+* v2.0.0 - 2022-09-05
     * Updated to JAXB 4.0.0
     * Requires Java 11 as the baseline
 * v1.2.2 - 2021-10-31
@@ -36,7 +35,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxb-pom</artifactId>
-  <version>1.2.0</version>
+  <version>2.0.0</version>
   <type>pom</type>
   <scope>import</scope>
 </dependency>

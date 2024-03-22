@@ -9,6 +9,9 @@ This project can be used for JAXB 4.x and requires at least Java 11.
 
 # News and noteworthy
 
+* v2.0.4 - 2024-03-22
+    * Updated to JAXB API 4.0.2
+    * Updated to JAXB 4.0.5
 * v2.0.3 - 2023-11-06
     * Updated to JAXB API 4.0.1
     * Updated to JAXB 4.0.4

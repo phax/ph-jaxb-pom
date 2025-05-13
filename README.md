@@ -1,3 +1,7 @@
+# Archived
+
+Since the take over through Jakarta, the Maven artifacts are clean and easy to us. No need for this project anymore.
+
 # ph-jaxb-pom
 
 A POM only project that contains all dependencies for easily using JAXB from Maven.
@@ -45,7 +49,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxb-pom</artifactId>
-  <version>2.0.0</version>
+  <version>2.0.4</version>
   <type>pom</type>
   <scope>import</scope>
 </dependency>
